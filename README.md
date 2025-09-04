@@ -6,7 +6,7 @@ Test your memory by repeating the sequence of colors. The challenge grows with e
 ---
 
 ## 🌐 Live Demo  
-[![Play Now](https://img.shields.io/badge/PLAY%20DEMO-00C853?style=for-the-badge&logo=github&logoColor=white)](https://sraddha-git.github.io/simon-says-game/)  
+[![Play Now](https://img.shields.io/badge/PLAY%20DEMO-00C853?style=for-the-badge&logo=github&logoColor=white)](sraddha-git.github.io/Simon-says-game/)  
 
 
 ---
