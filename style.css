@@ -1,0 +1,99 @@
+
+/* Root font size for rem conversion */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+/* Background Styling */
+body {
+  text-align: center;
+  background: linear-gradient(135deg, #141E30, #243B55); /* dark gradient */
+  font-family: "Poppins", sans-serif;
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Game Title */
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.4);
+}
+
+/* Container Box with gradient shade */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 6.25rem); /* 100px = 6.25rem */
+  grid-gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  
+  padding: 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #203a43, #2c5364); /* lighter shade */
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Pulse animation */
+@keyframes pulseGlow {
+  0%   { box-shadow: 0 0 1rem #00ffcc; }
+  50%  { box-shadow: 0 0 2.5rem #00ffcc; }
+  100% { box-shadow: 0 0 1rem #00ffcc; }
+}
+
+.container.pulse {
+  animation: pulseGlow 1s ease-in-out;
+}
+
+/* Buttons (smaller size) */
+.btn {
+  height: 6.25rem;  /* 100px */
+  width: 6.25rem;   /* 100px */
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button Colors */
+.green {
+  background: #28a745;
+  box-shadow: 0 0 1rem #28a745;
+}
+.red {
+  background: #e63946;
+  box-shadow: 0 0 1rem #e63946;
+}
+.yellow {
+  background: #f4d35e;
+  box-shadow: 0 0 1rem #f4d35e;
+}
+.purple {
+  background: #6a4c93;
+  box-shadow: 0 0 1rem #6a4c93;
+}
+
+/* Hover Effect */
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Flash Animation */
+.flash {
+  filter: brightness(150%);
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* Game Over Background Blink */
+body.game-over {
+  background: linear-gradient(135deg, #8e0e00, #1f1c18);
+}
